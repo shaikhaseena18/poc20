@@ -5,7 +5,7 @@ class Handler(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-type', 'text/plain')
         self.end_headers()
-        self.wfile.write(b"Hello Team from POC-20 Python App hi ")
+        self.wfile.write(b"Hello Team from POC-20 Python App hi team ")
 
 if __name__ == "__main__":
     server = HTTPServer(("0.0.0.0", 8080), Handler)
